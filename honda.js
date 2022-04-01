@@ -150,5 +150,21 @@ red[0].onmouseover = function(){
  
  }
  
-
+ const buttons = document.querySelectorAll('.carousel-indicators li')
+ 
+ buttons.forEach((button,index)=>{
+      button.onclick = function(){
+           document.querySelector('.carousel-indicators li.active').classList.remove('active');
+           this.classList.add('active')
+      }
+ })
+ 
+ const buttons2 = document.querySelectorAll('.carousel-red li')
+ 
+ buttons2.forEach((button,index)=>{
+      button.onclick = function(){
+           document.querySelector('.carousel-red li.active').classList.remove('active');
+           this.classList.add('active')
+      }
+ })
 
